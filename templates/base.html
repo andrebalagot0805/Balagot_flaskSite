@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Flask Website</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/test.css') }}">
+</head>
+<body>
+
+    <div class="container mt-4">
+        {% block content %}
+            <h1>Hello world!</h1>
+        {% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
+

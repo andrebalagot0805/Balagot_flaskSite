@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Create a New Item</h1>
+
+<form method="POST">
+    <input type="text" name="name"
+           placeholder="Item Name" required>
+
+    <button type="submit">Create</button>
+</form>
+
+{% endblock %}
